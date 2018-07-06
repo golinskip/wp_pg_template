@@ -22,7 +22,7 @@ class fc {
      * @return type
      */
     public function av($name, $resource) {
-        return get_template_directory_uri().'/'.'assets'.'/'.'vendor'.'/'.$name.'/'.$resource;
+        return get_template_directory_uri().'/'.'vendor'.'/'.$name.'/'.$resource;
     }
     
     /**

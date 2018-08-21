@@ -1,27 +1,11 @@
 <?php 
     // @todo - customizable footers
 ?>
-<!--Footer-->
-<footer class="page-footer font-small stylish-color-dark pt-4">
+<?php 
+if(get_option(wtst_options::O_FTR_OPTIONS) == 4 ){
+    get_template_part('template-parts/footer/footer', 'opt4');
+} else {
+    get_template_part('template-parts/footer/footer', 'opt1');
+}
 
-    <!--Footer Links-->
-        <?php #get_template_part('template-parts/footer/footer', 'links') ?>
-    <!--/.Footer Links-->
-
-        <?php get_template_part('template-parts/footer/footer', 'menu') ?>
-    <hr>
-
-    <!--Call to action-->
-        <?php #get_template_part('template-parts/footer/footer', 'newsletter') ?>
-    <!--/.Call to action-->
-
-    
-    <!--Social buttons-->
-        <?php get_template_part('template-parts/footer/footer', 'social') ?>
-    <!--/.Social buttons-->
-    
-    <?php get_template_part('template-parts/footer/footer', 'copyright') ?>
-
-</footer>
-<!--/.Footer-->
-                      
+?>

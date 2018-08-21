@@ -1,9 +1,6 @@
 
 <!--Social buttons-->
-<div class="text-center">
-    <span class="wtst-social-text">
-        <?php echo get_option(wtst_options::T_FTR_SOCIAL_TEXT); ?>
-    </span>
+<div>
         <?php if (get_option(wtst_options::T_SOC_FB) != null): ?>
             <div class='icon social fb'>
                 <a href="<?php echo get_option(wtst_options::T_SOC_FB) ?>">

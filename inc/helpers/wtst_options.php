@@ -129,6 +129,13 @@ class wtst_options {
      * 1 - tak
      */
     const O_HDR_PRELOADER = 'wtst_hdr_preloader';
+
+    /**
+     * Opcje układu stopki
+     * 0 - 1 kolumna
+     * 4 - 4 kolumny
+     */
+    const O_FTR_OPTIONS = 'wtst_ftr_options';
     
     /**
      * Stopka - treść pierwszej kolumny
@@ -155,6 +162,11 @@ class wtst_options {
      * Stopka - tekst pred linkami do społeczności
      */
     const T_FTR_SOCIAL_TEXT = 'wtst_ftr_social_text';
+    
+    /**
+     * Stopka - tekst pred linkami do społeczności
+     */
+    const T_FTR_MENU_TEXT = 'wtst_ftr_menu_text';
     
     
     /**
